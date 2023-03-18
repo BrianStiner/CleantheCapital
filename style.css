@@ -31,31 +31,31 @@
   z-index :1;
 }
 .button div {   
-  position :relative; 
-  top :0; left :-100%;
+  position: relative; 
+  top: 0; left: -100%;
   width :200%; height :100%;
-  background-image :url("Blue_Wave.png");
-  background-repeat-x :repeat; 
-  animation-name :wave; animation-duration :5s; animation-iteration-count :infinite; 
+  background-image: url("Blue_Wave.png");
+  background-repeat-x: repeat; 
+  animation-name: wave; animation-duration: 5s; animation-iteration-count: infinite; 
 }
 @keyframes wave {    from {left:-100%;}    to {left:-50%;}}
 .button:hover div {    
-  transform :translateY(-50%); /* move up on hover */    
-  transition :transform ease-in-out .5s; /* smooth transition */    
-  animation-duration :3.8s; /* faster animation on hover*/
+  transform: translateY(-50%); /* move up on hover */    
+  transition: transform ease-in-out .5s; /* smooth transition */    
+  animation-duration: 3.8s; /* faster animation on hover*/
 }
 
-/* Style the services section for residential customers */.services {    margin-top :400px; /* adjust according to your video height */    padding-left :20px;    padding-right :20px;    background-color:white ;/* contrast with video background */ }
-.services h3 {    text-align:center ;    font-size :36px ;    color:#00f ;/* match with gradient color */ }
-.services p {    text-align:center ;    font-size :18px ;    color:#000 ; }
-.service-item {     display:flex ;     align-items:center ;     justify-content:center ;     margin-top :20px ; }
-.service-item img {     width :300px ;     height:auto ; }
-.service-item h4 {     font-size :24px ;     color:#00f ;/* match with gradient color */ }
-.service-item p {     font-size :16px ;     color:#000 ; }
+/* Style the services section for residential customers */.services {    margin-top: 400px; /* adjust according to your video height */    padding-left :20px;    padding-right :20px;    background-color:white ;/* contrast with video background */ }
+.services h3 {    text-align: center ;    font-size: 36px ;    color: #00f ;/* match with gradient color */ }
+.services p {    text-align: center ;    font-size: 18px ;    color: #000 ; }
+.service-item {     display: flex ;     align-items: center ;     justify-content: center ;     margin-top: 20px ; }
+.service-item img {     width: 300px ;     height: auto ; }
+.service-item h4 {     font-size: 24px ;     color: #00f ;/* match with gradient color */ }
+.service-item p {     font-size: 16px ;     color: #000 ; }
 
 /* Style the commercial section for commercial clients */
-.commercial{      margin-top :-400px; /* adjust according to your svg height */        padding-left :-20px ;        padding-right :-20px ;        background-color:white ;/* contrast with svg background */   } 
-.commercial h3 {        text-align:center ;        font-size :-36px ;        color:#f00 ;/* match with gradient color */   } 
-.commercial p {        text-align:center ;        font-size :-18px ;        color:#000 ;   } 
-.commercial-item {         display:flex ;         align-items:center ;         justify-content:center ;         margin-top :-20px ;}
-Commercial-item img { width :-300px ; height:auto ; } .commercial-item h4 { font-size :-24px ; color:#f00 ;/* match with gradient color */ } .commercial-item p { font-size :-16px ; color:#000 ; }
+.commercial{      margin-top: -400px; /* adjust according to your svg height */        padding-left: -20px ;        padding-right :-20px ;        background-color:white ;/* contrast with svg background */   } 
+.commercial h3 {        text-align: center ;        font-size: -36px ;        color: #f00 ;/* match with gradient color */   } 
+.commercial p {        text-align: center ;        font-size: -18px ;        color: #000 ;   } 
+.commercial-item {         display: flex ;         align-items: center ;         justify-content: center ;         margin-top :-20px ;}
+Commercial-item img { width: -300px ; height: auto ; } .commercial-item h4 { font-size: -24px ; color: #f00 ;/* match with gradient color */ } .commercial-item p { font-size :-16px ; color:#000 ; }
