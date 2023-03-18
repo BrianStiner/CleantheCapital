@@ -5,21 +5,31 @@
 }
 
 /* Style the video to be a responsive nice looking background */
-.video-box{
-  postion: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+.video-box {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
-/* .video-box::before{
-  content: "";
-  display: block;
-  padding-top: calc(9/16*100%);
-} */
-.MyVideo {  
+.video-box iframe {
   position: absolute;
-  top: -50%; left: -50%;
-  width: auto; height: auto;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-box iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-box iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
 }
 
 /* Style the button used to book service */
