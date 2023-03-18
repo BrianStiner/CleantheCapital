@@ -48,6 +48,7 @@
 /* Style the services section for residential customers */
 .services {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 400px;
@@ -59,12 +60,14 @@
   font-size: 36px;
   color: #00f;
   text-align: center;
+  width: 100%;
 }
 
 .services p {
   font-size: 18px;
   color: #000;
   text-align: center;
+  width: 100%;
 }
 
 .service-item {
@@ -88,11 +91,3 @@
   font-size: 16px;
   color: #000;
 }
-
-
-/* Style the commercial section for commercial clients */
-.commercial{      margin-top: -400px; /* adjust according to your svg height */        padding-left: -20px ;        padding-right :-20px ;        background-color:white ;/* contrast with svg background */   } 
-.commercial h3 {        text-align: center ;        font-size: -36px ;        color: #f00 ;/* match with gradient color */   } 
-.commercial p {        text-align: center ;        font-size: -18px ;        color: #000 ;   } 
-.commercial-item {         display: flex ;         align-items: center ;         justify-content: center ;         margin-top :-20px ;}
-Commercial-item img { width: -300px ; height: auto ; } .commercial-item h4 { font-size: -24px ; color: #f00 ;/* match with gradient color */ } .commercial-item p { font-size :-16px ; color:#000 ; }
