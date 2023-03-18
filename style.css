@@ -1,7 +1,7 @@
-/* So this applies but not my other styles? */
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 /* Style the video to be a responsive nice looking background */
