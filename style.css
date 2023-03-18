@@ -24,12 +24,10 @@
 
 /* Style the button used to book service */
 .button-container {
-  position: relative; 
+  position: absolute;
+  top: 50%; left: 50%;
 }
 .button {
-  position: absolute;
-  top: 50%; /* Adjust the position of the button to center it */
-  left: 50%;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
@@ -40,13 +38,13 @@
 }
 .button a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 24px;
 }
 .button span {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   z-index: 1;
