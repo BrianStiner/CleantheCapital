@@ -1,8 +1,9 @@
 /* Style the video: 100% width and height to cover the entire window */#myVideo {  position: fixed;  right: 0;  bottom: 0;  min-width: 100%;  min-height: 100%;}
-/* Style the button used to book service */.button {  display: flex;  align-items: center;  justify-content: center;  width: 200px;  height: 100px;  border: none;  position: relative;  overflow: hidden;}
+/* Style the button used to book service */
+.button {  display: flex;  align-items: center;  justify-content: center;  width: 200px;  height: 100px;  border: none;  position: relative;  overflow: hidden;}
 .button a {  text-decoration: none;  color: white;  font-size: 24px;}
 .button span {   z-index :1; /* above the div */}
-.button div {   position :absolute; /* fill the button */   top :0;    left :-100%; /* start from outside */   width :200%;   height :100%;   background-image :url("blue_wave.png"); /* your image */   background-repeat-x :repeat; /* repeat horizontally */   animation-name :wave; /* name of animation */   animation-duration :5s; /* duration of animation */   animation-iteration-count :infinite; /* repeat forever */ }
+.button div {   position :absolute; /* fill the button */   top :0;    left :-100%; /* start from outside */   width :200%;   height :100%;   background-image :url("blue_wave.png");   background-repeat-x :repeat; /* repeat horizontally */   animation-name :wave; /* name of animation */   animation-duration :5s; /* duration of animation */   animation-iteration-count :infinite; /* repeat forever */ }
 @keyframes wave {    from {left:-100%;}    to {left:-50%;}}
 .button:hover div {    transform :translateY(-50%); /* move up on hover */    transition :transform ease-in-out .5s; /* smooth transition */    animation-duration :2s; /* faster animation on hover*/}
 /* Style the services section for residential customers */.services {    margin-top :400px; /* adjust according to your video height */    padding-left :20px;    padding-right :20px;    background-color:white ;/* contrast with video background */ }
