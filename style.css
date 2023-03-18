@@ -1,8 +1,14 @@
 /* Style the video to be a background */
-.myVideo {  position: fixed;  right: 0;  bottom: 0;  min-width: 100%;  min-height: 100%;}
+.myVideo {  
+  width: 100vw; height: 100vh;
+  object-fit: cover; position: fixed;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  z-index: -1;
+}
 
 /* Style the button used to book service */
-.button {  display: flex;  align-items: center;  justify-content: center;  width: 200px;  height: 100px;  border: none;  position: relative;  overflow: hidden;}
+.button {  display: flex;  align-items: center;  justify-content: center;  width: 600px;  height: 100px;  border: none;  position: relative;  overflow: hidden;}
 .button a {  text-decoration: none;  color: white;  font-size: 24px;}
 .button span {   z-index :1; text-transform: uppercase;/* above the div */}
 .button div {   position :absolute; /* fill the button */   top :0;    left :-100%; /* start from outside */   width :200%;   height :100%;   background-image :url("Blue_Wave.png");   background-repeat-x :repeat; /* repeat horizontally */   animation-name :wave; /* name of animation */   animation-duration :5s; /* duration of animation */   animation-iteration-count :infinite; /* repeat forever */ }
