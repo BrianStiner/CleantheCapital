@@ -23,9 +23,8 @@
 }
 
 /* Style the button used to book service */
-/* Style the button used to book service */
 .button-container {
-  position: relative; /* Add a relative position to parent container */
+  position: relative; 
 }
 .button {
   position: absolute;
