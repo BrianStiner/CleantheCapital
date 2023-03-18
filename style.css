@@ -45,13 +45,50 @@
   animation-duration: 3.8s; /* faster animation on hover*/
 }
 
-/* Style the services section for residential customers */.services {    margin-top: 400px; /* adjust according to your video height */    padding-left :20px;    padding-right :20px;    background-color:white ;/* contrast with video background */ }
-.services h3 {    text-align: center ;    font-size: 36px ;    color: #00f ;/* match with gradient color */ }
-.services p {    text-align: center ;    font-size: 18px ;    color: #000 ; }
-.service-item {     display: flex ;     align-items: center ;     justify-content: center ;     margin-top: 20px ; }
-.service-item img {     width: 300px ;     height: auto ; }
-.service-item h4 {     font-size: 24px ;     color: #00f ;/* match with gradient color */ }
-.service-item p {     font-size: 16px ;     color: #000 ; }
+/* Style the services section for residential customers */
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 400px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.services h3 {
+  font-size: 36px;
+  color: #00f;
+  text-align: center;
+}
+
+.services p {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+.service-item {
+  flex-basis: calc(33.33% - 40px);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-item h4 {
+  font-size: 24px;
+  color: #00f;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #000;
+}
+
 
 /* Style the commercial section for commercial clients */
 .commercial{      margin-top: -400px; /* adjust according to your svg height */        padding-left: -20px ;        padding-right :-20px ;        background-color:white ;/* contrast with svg background */   } 
