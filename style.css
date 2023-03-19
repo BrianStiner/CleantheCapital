@@ -46,7 +46,8 @@
 }
 .button:focus div {
   transform: translateY(-50%);
-  animation-duration: 3.8s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 .button a {
   text-decoration: none;
