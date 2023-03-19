@@ -66,6 +66,10 @@ body {
   font-weight: bold;
   z-index: 1;
 }
+.button div {
+  position: absolute;
+  background: url(water.svg);
+}
 
 
 /* Style the services section for residential customers */
