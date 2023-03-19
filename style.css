@@ -34,11 +34,36 @@
 
 /* Style the button used to book service */
 .button {
-  transform: translate(-50%, -50%);
-  align-items: center;
-  justify-content: center;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 600px;
+  height: 400px;
+  background-color: #B3E5FC;
   overflow: hidden;
+}
+
+.Wave {
+  background-image: url(water.svg);
+  width: 1200px;
+  animation-name: swell;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #4FC3F7;
+}
+
+@keyframes swell {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+.button:hover div {
+  transform: translateY(-50%);
+  animation-duration: 3.8s;
 }
 .button a {
   text-decoration: none;
@@ -53,32 +78,7 @@
   font-weight: bold;
   z-index: 1;
 }
-.button div {
-  position: relative;
-  top: -50%
-  transform: translateY(0%);
-  transition: transform ease-in-out 0.5s;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-image: url("Blue_Wave.png");
-  background-repeat-x: repeat;
-  animation-name: wave;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes wave {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
-}
-.button:hover div {
-  transform: translateY(-50%);
-  animation-duration: 3.8s;
-}
+
 
 /* Style the services section for residential customers */
 .services {
