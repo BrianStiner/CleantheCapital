@@ -3,6 +3,9 @@
 *:after {
   box-sizing: border-box;
 }
+body {
+  background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7eb7e 100%);
+}
 
 /* Style the video to be a responsive nice looking background */
 .video-box {
