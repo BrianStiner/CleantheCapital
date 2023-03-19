@@ -69,6 +69,11 @@ body {
 .button div {
   position: absolute;
   background: url(water.svg);
+  top:-100px;
+  height: 100px;
+  width: 800px;
+  animation: wave 7s cubic-bezier(.36, .45, .53, .65) infinite; 
+  webkit-animation: wave 7s cubic-bezier(.36, .45, .53, .65) infinite;
 }
 
 
