@@ -17,9 +17,9 @@
   </style>
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1E90FF"/>
-      <stop offset="50%" stop-color="#20B2AA"/>
-      <stop offset="100%" stop-color="#FFFFFF"/>
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="10%" stop-color="#20B2AA"/>
+      <stop offset="100%" stop-color="##6495ED"/>
     </linearGradient>
   </defs>
   <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z" >
