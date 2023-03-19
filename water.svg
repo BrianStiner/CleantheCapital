@@ -1,1 +1,9 @@
-<svg class="Wave" preserveAspectRatio="none" width="800" height="100"><style>.Wave{width:400px;left: 0px; animation-name:swell;animation-duration:5s;animation-fill-mode:forwards;animation-iteration-count:infinite;animation-timing-function:linear;background-repeat:repeat-x;fill:url(#gradient);}@keyframes swell{0%{transform:translateX(-25%);}100%{transform:translateX(25%);}}</style><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#87CEFA"/><stop offset="20%" stop-color="#6495ED"/><stop offset="100%" stop-color="#00BFFF"/></linearGradient></defs> <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z" > <animate dur="5s" repeatCount="indefinite" attributeName="d" values=" M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z; M9720,0C8100,0,8100,319,6480,319S4860,0,3240,0,1620,320,0,320v800H12960V320C11340,320,11340,0,9720,0Z; M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z "/> </path> </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198">
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="-10.959%" y2="100%">
+      <stop stop-color="#57BBC1" stop-opacity=".25" offset="0%"/>
+      <stop stop-color="#015871" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z" transform="matrix(-1 0 0 1 1600 0)"/>
+</svg>
