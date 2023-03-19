@@ -6,14 +6,22 @@
       animation-duration: 5s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
-      animation-timing-function: step-start;
+      animation-timing-function: ease;
       background-repeat: repeat-x;
-      background: linear-gradient(to bottom, #1E90FF, #20B2AA, #FFFFFF);
+      fill: url(#gradient);
+      
     }
     @keyframes swell {
       0% { transform: translateX(-50%);}
       100% { transform: translateX(0%);}
   </style>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E90FF"/>
+      <stop offset="50%" stop-color="#20B2AA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
   <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z" >
     <animate
       dur="5s"
