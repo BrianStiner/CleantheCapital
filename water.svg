@@ -6,7 +6,7 @@
       animation-duration: 5s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
-      animation-timing-function: ease-in;
+      animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
       background-repeat: repeat-x;
       fill: url(#gradient);
       
