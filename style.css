@@ -68,7 +68,7 @@ body {
   font-weight: bold;
   z-index: 1;
 }
-.button .wave {
+.button .Wave {
   position: absolute;
   background: url(water.svg);
   top: -300px;
