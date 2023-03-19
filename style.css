@@ -39,15 +39,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 600px;
-  height: 400px;
+  width: 200px;
+  height: 100px;
   background-color: #B3E5FC;
   overflow: hidden;
 }
 
 .Wave {
-  background-image: url(water.svg);
-  width: 1200px;
+  width: 400px;
   animation-name: swell;
   animation-duration: 2s;
   animation-fill-mode: forwards;
