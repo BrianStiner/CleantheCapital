@@ -71,6 +71,7 @@ body {
 .button .Wave {
   position: absolute;
   background: url(water.svg);
+  left: 100px
   top: 110px;
   height: 100px;
   width: 400px;
