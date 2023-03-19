@@ -71,8 +71,7 @@ body {
 .button .wave {
   position: absolute;
   background: url(water.svg);
-  left: 0px;
-  top: 0px;
+  top: -300px;
   height: 100px;
   width: 400px;
   animation: wave 7s cubic-bezier(.36, .45, .63, .53) infinite; 
@@ -80,7 +79,7 @@ body {
 }
 .wave:nth-of-type(2) {
   opacity: 100%;
-  top: -110px;
+  top: -310px;
   animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
