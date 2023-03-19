@@ -1,0 +1,6 @@
+<FilesMatch "\.(svg|svgz)$">
+  <IfModule mod_headers.c>
+    Header set Content-Type "image/svg+xml"
+    Header set Content-Encoding "gzip"
+  </IfModule>
+</FilesMatch>
