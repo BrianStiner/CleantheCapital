@@ -62,7 +62,7 @@
   100% {
     transform: translateX(0%);
   }
-.button:hover div {
+.button:focus .Wave {
   transform: translateY(-50%);
   animation-duration: 3.8s;
 }
