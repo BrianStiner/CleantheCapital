@@ -50,7 +50,7 @@ body {
   background-color: #B3E5FC;
   overflow: hidden;
 }
-.button:focus .Wave {
+.button:hover .Wave {
   transform: translateY(-50%);
   animation-duration: 2s;
   animation-timing-function: linear;
