@@ -68,7 +68,7 @@ body {
   font-weight: bold;
   z-index: 1;
 }
-.button div {
+.button .wave {
   position: absolute;
   background: url(water.svg);
   top:-100px;
@@ -83,13 +83,23 @@ body {
   animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
-@keyframes {
-  0%{ margin-left:0px; }
+@keyframes wave {
+  0%{ margin-left:0px; },
   100% { margin-left: -800px; }
 }
-@-webkit-keyframes {
-  0%{ margin-left:0px; }
+@-webkit-keyframes wave {
+  0%{ margin-left:0px; },
   100% { margin-left: -800px; }
+}
+@keyframes swell {
+  0%,
+  100%{ transform: translate3d(0, -15px, 0) }
+  50%{ transform: translate3d(0, 3px, 0) }
+}
+@-webkit-keyframes swell {
+  0%,
+  100%{ transform: translate3d(0, -15px, 0) }
+  50%{ transform: translate3d(0, 3px, 0) }
 }
 
 
