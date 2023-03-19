@@ -1,7 +1,7 @@
 <svg class="Wave" viewBox="0 0 12960 1120" preserveAspectRatio="none">
   <style> 
     .Wave {
-      width: 400px;
+      width: 800px;
       animation-name: swell;
       animation-duration: 2s;
       animation-fill-mode: forwards;
@@ -9,7 +9,6 @@
       animation-timing-function: linear;
       fill: #4FC3F7;
     }
-
     @keyframes swell {
       0% { transform: translateX(-50%);}
       100% { transform: translateX(0%);}
