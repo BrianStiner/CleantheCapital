@@ -36,6 +36,7 @@
 
 /* Style the button used to book service */
 .button {
+  postion: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -44,7 +45,7 @@
   background-color: #B3E5FC;
   overflow: hidden;
 }
-.button:focus div {
+.button:focus .Wave {
   transform: translateY(-50%);
   animation-duration: 2s;
   animation-timing-function: linear;
