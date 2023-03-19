@@ -75,20 +75,19 @@ body {
   top: 110px;
   height: 100px;
   width: 400px;
-  animation: wave 7s cubic-bezier(.36, .45, .63, .53) infinite; 
+  animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite; 
   -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
   opacity: 100%;
-  top: 100px;
-  animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
+  animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
-@keyframes wave {
+@keyframes move {
   0%{ margin-left:0px; },
   100% { margin-left: -800px; }
 }
-@-webkit-keyframes wave {
+@-webkit-keyframes move {
   0%{ margin-left:0px; },
   100% { margin-left: -800px; }
 }
