@@ -8,13 +8,13 @@
       animation-iteration-count: infinite;
       animation-timing-function: step-start;
       background-repeat: repeat-x;
-      fill: #4FC3F7;
+      background: linear-gradient(to bottom, #1E90FF, #20B2AA, #FFFFFF);
     }
     @keyframes swell {
       0% { transform: translateX(-50%);}
       100% { transform: translateX(0%);}
   </style>
-  <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z" style="fill:blue;" >
+  <path d="M9720,320C8100,320,8100,0,6480,0S4860,320,3240,320,1620,0,0,0V1120H12960V0C11340,0,11340,320,9720,320Z" >
     <animate
       dur="5s"
       repeatCount="indefinite"
