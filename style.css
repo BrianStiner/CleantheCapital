@@ -110,6 +110,7 @@ body {
 
 /* Style the button used to book service */
 .button {
+  border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2), 
               0px 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
