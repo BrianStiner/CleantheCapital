@@ -72,7 +72,7 @@ body {
   position: absolute;
   background: url(water.svg);
   left: 200px;
-  top: 70px;
+  top: 50px;
   height: 100px;
   width: 400px;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite; 
