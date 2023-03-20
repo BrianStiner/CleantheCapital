@@ -76,7 +76,7 @@ body {
   background-repeat: repeat-x;
   left: 200px;
   top: 120px;
-  height: 100px;
+  height: 70px;
   width: 400px;
   animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite; 
   -webkit-animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite;
