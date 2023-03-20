@@ -71,6 +71,7 @@ body {
 .button .Wave {
   position: absolute;
   background: url(water.svg);
+  background-size: contain;
   left: 200px;
   top: 70px;
   height: 100px;
@@ -79,6 +80,7 @@ body {
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
+  background-size: cover;
   postion: absolute;
   left: 0px;
   top: -10px;
