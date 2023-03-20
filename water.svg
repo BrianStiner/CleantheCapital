@@ -5,5 +5,5 @@
       <stop stop-color="#015871" offset="100%"/>
     </linearGradient>
   </defs>
-  <path fill="url(#a)" fill-rule="evenodd" d="M0.00125 30.25C77.75 30.25 102.4745 -0.0625 202.75 0c100 0 125 30.25 197.25 30.25v19.25H0s0.00125 -12 .00125 -19.25z" transform="matrix(-1 0 0 1 400 0)"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M0.00125 30.25C77.75 30.25 102.4745 -0.0625 202.75 0c100 0 125 30.25 197.25 30.25v19.25H0s0.00125 -12 .00125 -19.25z" transform="matrix(-1 0 0 2 400 0)"/>
 </svg>
