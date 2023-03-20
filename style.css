@@ -71,7 +71,6 @@ body {
 .button .Wave {
   position: absolute;
   background: url(water.svg);
-  background-size: contain;
   left: 200px;
   top: 70px;
   height: 100px;
@@ -80,10 +79,9 @@ body {
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
-  background-size: cover;
   postion: absolute;
   left: 0px;
-  top: -10px;
+  top: 10px;
   opacity: 100%;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
@@ -98,13 +96,13 @@ body {
 }
 @keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -15px, 0); }
-  50%{ transform: translate3d(0, 3px, 0); }
+  100%{ transform: translate3d(0, -5px, 0); }
+  50%{ transform: translate3d(0, 10px, 0); }
 }
 @-webkit-keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -15px, 0); }
-  50%{ transform: translate3d(0, 3px, 0); }
+  100%{ transform: translate3d(0, -5px, 0); }
+  50%{ transform: translate3d(0, 10px, 0); }
 }
 
 
