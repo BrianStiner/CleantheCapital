@@ -51,7 +51,7 @@ body {
   overflow: hidden;
 }
 .button:hover .Wave {
-  margin-top: -25px;
+  margin-top: -18px;
 }
 .button a {
   text-decoration: none;
@@ -72,6 +72,7 @@ body {
   background-position: 50%;
   background-size: auto 100%;
   background-repeat: repeat-x;
+  transition-duration: 1s;
   left: 200px;
   top: 90px;
   height: 50px;
@@ -96,13 +97,13 @@ body {
 }
 @keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -10px, 0); }
-  50%{ transform: translate3d(0, 5px, 0); }
+  100%{ transform: translate3d(0, -8px, 0); }
+  50%{ transform: translate3d(0, 4px, 0); }
 }
 @-webkit-keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -10px, 0); }
-  50%{ transform: translate3d(0, 5px, 0); }
+  100%{ transform: translate3d(0, -8px, 0); }
+  50%{ transform: translate3d(0, 4px, 0); }
 }
 
 
