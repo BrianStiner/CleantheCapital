@@ -79,17 +79,20 @@ body {
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
+  postion: absolute;
+  left: 200px;
+  top: 100px;
   opacity: 100%;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
 @keyframes move {
   0%{ margin-left:0px; }
-  100% { margin-left: -400px; }
+  100% { margin-left: -200px; }
 }
 @-webkit-keyframes move {
   0%{ margin-left:0px; }
-  100% { margin-left: -400px; }
+  100% { margin-left: -200px; }
 }
 @keyframes swell {
   0%,
