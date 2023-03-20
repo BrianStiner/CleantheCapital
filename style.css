@@ -81,7 +81,7 @@ body {
 }
 .Wave:nth-of-type(2) {
   left: 0px;
-  top: 10px;
+  top: 130px;
   opacity: 100%;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
