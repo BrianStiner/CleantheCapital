@@ -71,35 +71,35 @@ body {
 .button .Wave {
   position: absolute;
   background: url(water.svg);
-  left: 100px
+  left: 200px;
   top: 110px;
   height: 100px;
   width: 400px;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite; 
-  -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) infinite;
+  -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
   opacity: 100%;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
-  -webkit-animation: wave 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
+  -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
 @keyframes move {
-  0%{ margin-left:0px; },
-  100% { margin-left: -800px; }
+  0%{ margin-left:0px; }
+  100% { margin-left: -400px; }
 }
 @-webkit-keyframes move {
-  0%{ margin-left:0px; },
-  100% { margin-left: -800px; }
+  0%{ margin-left:0px; }
+  100% { margin-left: -400px; }
 }
 @keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -15px, 0) }
-  50%{ transform: translate3d(0, 3px, 0) }
+  100%{ transform: translate3d(0, -15px, 0); }
+  50%{ transform: translate3d(0, 3px, 0); }
 }
 @-webkit-keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -15px, 0) }
-  50%{ transform: translate3d(0, 3px, 0) }
+  100%{ transform: translate3d(0, -15px, 0); }
+  50%{ transform: translate3d(0, 3px, 0); }
 }
 
 
