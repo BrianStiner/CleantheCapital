@@ -72,7 +72,7 @@ body {
   position: absolute;
   background: url(water.svg);
   left: 200px;
-  top: 110px;
+  top: 90px;
   height: 100px;
   width: 400px;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite; 
@@ -80,8 +80,8 @@ body {
 }
 .Wave:nth-of-type(2) {
   postion: absolute;
-  left: 200px;
-  top: 100px;
+  left: 0px;
+  top: -10px;
   opacity: 100%;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
