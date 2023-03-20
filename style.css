@@ -70,22 +70,23 @@ body {
 }
 .Wave {
   position: absolute;
-  background: url(#pattern);
+  background: url(water.svg);
+  background-position: 50%;
   background-size: auto 100%;
   background-repeat: repeat-x;
   left: 200px;
   top: 120px;
   height: 100px;
   width: 400px;
-  animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite alternate; 
-  -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite alternate;
+  animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite; 
+  -webkit-animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite;
 }
 .Wave:nth-of-type(2) {
   left: 0px;
   top: 130px;
   opacity: 100%;
-  animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite alternate;
-  -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite alternate;
+  animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
+  -webkit-animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
 @keyframes move {
   0%{ margin-left: 10px; }
