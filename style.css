@@ -51,7 +51,7 @@ body {
   overflow: hidden;
 }
 .button:hover .Wave {
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   animation-duration: 2s;
   animation-timing-function: linear;
 }
@@ -72,7 +72,7 @@ body {
   position: absolute;
   background: url(water.svg);
   left: 200px;
-  top: 50px;
+  top: 120px;
   height: 100px;
   width: 400px;
   animation: move 7s cubic-bezier(.36, .45, .63, .53) infinite; 
@@ -87,22 +87,22 @@ body {
   -webkit-animation: move 7s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
 }
 @keyframes move {
-  0%{ margin-left:0px; }
-  100% { margin-left: -200px; }
+  0%{ margin-left: 10px; }
+  100% { margin-left: -210px; }
 }
 @-webkit-keyframes move {
-  0%{ margin-left:0px; }
-  100% { margin-left: -200px; }
+  0%{ margin-left: 10px; }
+  100% { margin-left: -210px; }
 }
 @keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -5px, 0); }
-  50%{ transform: translate3d(0, 10px, 0); }
+  100%{ transform: translate3d(0, -10px, 0); }
+  50%{ transform: translate3d(0, 5px, 0); }
 }
 @-webkit-keyframes swell {
   0%,
-  100%{ transform: translate3d(0, -5px, 0); }
-  50%{ transform: translate3d(0, 10px, 0); }
+  100%{ transform: translate3d(0, -10px, 0); }
+  50%{ transform: translate3d(0, 5px, 0); }
 }
 
 
