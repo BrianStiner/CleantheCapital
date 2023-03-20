@@ -70,7 +70,7 @@ body {
 }
 .Wave {
   position: absolute;
-  background: url(water.svg);
+  background: url(#pattern);
   background-repeat: repeat-x;
   left: 200px;
   top: 120px;
