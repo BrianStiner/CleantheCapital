@@ -52,19 +52,17 @@ body {
 /* Style the logo */
 #logo {
   position: absolute;
-  float: left;
-  top: 10px;
-  right: 10px;
+  z-index: 2;
   margin-bottom: -25px;
-  max-height: 80px;
-  max-width: 80px;
   margin-top: -10px;
   margin-left: -10px;
+  max-height: 8vh;
+  min-width: 5vw;
 }
 
 #logo.big {
-  max-height: 280px;
-  min-width: 120px;
+  max-height: 20vh;
+  min-width: 6vw;
   margin-top: -35px;
   margin-left: -90px;
 }
