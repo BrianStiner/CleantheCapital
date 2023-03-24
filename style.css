@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease-in-out;
 }
 body {
   background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7eb7e 100%);
@@ -46,18 +47,19 @@ body {
 }
 
 /* Style the logo */
-#logo.big {
-    min-height: 280px;
-    min-width: 120px;
-    margin-top: -35px;
-    margin-left: -90px;
-}
 #logo {
-    margin-bottom: -25px;
-    min-height: 80px;
-    min-width: 80px;
-    margin-top: -10px;
-    margin-left: -10px;
+  margin-bottom: -25px;
+  min-height: 80px;
+  min-width: 80px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+#logo.big {
+  min-height: 280px;
+  min-width: 120px;
+  margin-top: -35px;
+  margin-left: -90px;
 }
 
 /* Style the login button */
