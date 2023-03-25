@@ -89,9 +89,9 @@ inset 0 0 100px 200px whitesmoke;
 
 /* Style the video to be a responsive nice looking background side */
 .video-box {
-  margin-left: 5%;
-  height: 40vw;
-  width: 40vw;
+  left: 0;
+  height: 600px;
+  width: 600px;
   position: relative;
   overflow: hidden;
   float: left;
