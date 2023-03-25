@@ -121,7 +121,7 @@ body {
 /* Style the words on the home page*/
 #hero {
   min-height: 1000px;
-  width: 100%;
+  width: 50%;
   flex-direction: column;
   flex: right;
 }
