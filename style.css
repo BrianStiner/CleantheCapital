@@ -59,12 +59,8 @@ inset 0 0 100px 200px whitesmoke;
   top: 10vh;
   left: -2vw;
 }
-@media (min-width: 1434px) {
-  #logo.big {
-    width: 660px;
-  }
-}
-  
+#logo.big.set {
+  width: 600px;
 }
 
 /* Style the login button */

@@ -19,3 +19,12 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+// If #Logo width > 650px, add .set class to #logo
+if (logoElement.clientWidth > 650) {
+    logoElement.classList.add('set');
+}
+// If #Logo width < 650px, remove .set class from #logo
+else if (logoElement.clientWidth < 650) {
+    logoElement.classList.remove('set');
+}
