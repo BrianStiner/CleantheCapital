@@ -5,26 +5,21 @@ const scrollThreshold = 500;
 const logoElement = document.getElementById('logo');
 const videoBoxElement = document.getElementById('video-box');
 
-if (window.innerWidth < 1368) {
+if (window.innerWidth < 1268) {
     logoElement.classList.remove('big');
+    calcleft = (window.innerWidth - 1268) / 2;
+    videoBoxElement.style.margin_left = calcleft + 'px';
 }
 
-// Listen for scroll events on window
+// Listen for scroll events on window, if far enough down shrink logo, and reverse.
 window.addEventListener('scroll', () => {
-    // Check if #logo has .big class
     if (logoElement.classList.contains('big')) {
-        // If window.scrollY > scrollThreshold, remove .big class from #logo
         if (window.scrollY > scrollThreshold) {
             logoElement.classList.remove('big');
         }
     } else {
-        // If window.scrollY < scrollThreshold, add .big class to #logo
         if (window.scrollY < scrollThreshold) {
             logoElement.classList.add('big');
-        }
-        if (window.innerWidth <= 1200) {
-            calcleft = (window.innerWidth - 1200) / 2;
-            videoBoxElement.style.margin_left = '-' + calcleft + 'px';
         }
     }
 });
