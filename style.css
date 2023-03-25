@@ -16,17 +16,14 @@ body {
 }
 
 #navbar {
+  margin-top: -20px;
   position: sticky;
   background-color: whitesmoke;
   overflow: hidden;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
-              0px 6px 20px 0px rgba(0, 0, 0, 0.19),
-              0px 8px 15px rgba(0, 0, 0, 0.2);
+            0px 6px 20px 0px rgba(0, 0, 0, 0.19),
+            0px 8px 15px rgba(0, 0, 0, 0.2);
   top: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-end;
-  width: 100vw;
   z-index: 2;
 }
 #navbar a {
@@ -48,21 +45,20 @@ body {
 
 /* Style the logo */
 #logo {
-  position: fixed;
-  top: 1%;
+  min-width: 15vw;
+  top: -1%;
   left: 1%;
+  position: fixed;
   z-index: 3;
-  min-height: 10vh;
-  min-width: 6vw;
+  box-shadow: 0 0 40px 20px whitesmoke,
+inset 0 0 100px 200px whitesmoke;
+  border-radius: 50%;
 }
 
 #logo.big {
-  max-height: 35vh;
-  max-width: 35vw;
-  min-height: max-content;
-  min-width: max-content;
-  top: 20vh;
-  left: 20vw;
+  min-width: 50vw;
+  top: 10vh;
+  left: -2vw;
 }
 
 /* Style the login button */
@@ -121,9 +117,13 @@ body {
 }
 /* Style the words on the home page*/
 #hero {
-  min-height: 800px;
+  margin-left: auto;
+  min-height: 600px;
   width: 50%;
-  flex: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3px;
 }
 #hero h2 {
   font-size: 50px;
@@ -173,6 +173,7 @@ body {
   z-index: 1;
 }
 .button .Wave {
+  opacity: 80%;
   position: absolute;
   background: url(images/water.svg);
   background-position: 50%;
@@ -180,7 +181,7 @@ body {
   background-repeat: repeat-x;
   transition-duration: 1s;
   left: -25px;
-  top: 20px;
+  top: 68px;
   height: 50px;
   width: 400px;
   animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite; 
@@ -188,7 +189,7 @@ body {
 }
 .Wave:nth-of-type(2) {
   left: 0px;
-  top: 0px;
+  top: 74px;
   opacity: 100%;
   animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
