@@ -121,13 +121,24 @@ inset 0 0 100px 200px whitesmoke;
 }
 /* Style the words on the home page*/
 #hero {
-  margin-left: auto;
+  width: 55vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
   min-height: 600px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 3px;
+  padding: 0px 10px 10px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  #hero {
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #hero img:first {
+    margin-left: 0px;
+  }
 }
 #hero h2 {
   font-size: 50px;
@@ -223,9 +234,12 @@ inset 0 0 100px 200px whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .box {
     grid-template-columns: 1fr;
+  }
+  .services {
+    margin: 0px auto 25px auto;
   }
 }
 .services {
