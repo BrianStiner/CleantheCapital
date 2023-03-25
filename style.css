@@ -29,6 +29,7 @@ body {
   text-decoration: none;
 }
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: flex-end;
 }
@@ -51,7 +52,7 @@ body {
 
 /* Style the logo */
 #logo {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   margin-bottom: -25px;
   margin-top: -10px;
