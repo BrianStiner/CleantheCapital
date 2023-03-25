@@ -169,6 +169,7 @@ inset 0 0 100px 200px whitesmoke;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: none;
   border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2), 
               0px 6px 20px rgba(0, 0, 0, 0.1);
@@ -259,8 +260,8 @@ inset 0 0 100px 200px whitesmoke;
   align-items: center;
   overflow: hidden;
   background-color: #7ed6ff17;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 
-              0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.2), 
+              3px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .services h3 {
