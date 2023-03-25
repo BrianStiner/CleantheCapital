@@ -53,19 +53,16 @@ body {
 /* Style the logo */
 #logo {
   position: fixed;
+  top: 0;
+  left: -20px;
   z-index: 2;
-  margin-bottom: -25px;
-  margin-top: -10px;
-  margin-left: -10px;
   max-height: 8vh;
   min-width: 5vw;
 }
 
 #logo.big {
-  max-height: 20vh;
-  min-width: 6vw;
-  margin-top: -35px;
-  margin-left: -90px;
+  max-height: 40vh;
+  min-width: 25vw;
 }
 
 /* Style the login button */
