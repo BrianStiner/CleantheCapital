@@ -97,18 +97,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.video-box iframe {
-  width: 100vw;
-  height: 100vh;
+.video-box video {
+  width: 100%;
+  height: 100%;
 }
 @media (min-aspect-ratio: 16/9) {
-  .video-box iframe {
+  .video-box video {
     /* height = 100 * (9 / 16) = 56.25 */
     height: 56.25vw;
   }
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-box iframe {
+  .video-box video {
     /* width = 100 / (9 / 16) = 177.777777 */
     width: 177.78vh;
   }
@@ -144,7 +144,7 @@ body {
   z-index: 1;
 }
 .Wave {
-  position: absolute;
+  position: relative;
   background: url(images/water.svg);
   background-position: 50%;
   background-size: auto 100%;
