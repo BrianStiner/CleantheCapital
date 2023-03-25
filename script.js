@@ -1,9 +1,15 @@
 // Set scroll threshold
-const scrollThreshold = 400;
+const scrollThreshold = 300;
 
 // Get a reference to #logo
 const logoElement = document.getElementById('logo');
 
+// if the screen is wider than 1200px, add .set class to #logo
+if (window.innerWidth > 1200) {
+    logoElement.classList.add('set');
+} else if (window.innerWidth <= 1200) {
+    logoElement.classList.remove('set');
+}
 // Listen for scroll events on window
 window.addEventListener('scroll', () => {
     // Check if #logo has .big class
@@ -20,11 +26,4 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// If #Logo width > 650px, add .set class to #logo
-if (logoElement.clientWidth > 650) {
-    logoElement.classList.add('set');
-}
-// If #Logo width < 650px, remove .set class from #logo
-else if (logoElement.clientWidth < 650) {
-    logoElement.classList.remove('set');
-}
+
