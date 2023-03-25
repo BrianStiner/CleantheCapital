@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 body {
   background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7eb7e 100%);
@@ -32,11 +32,16 @@ body {
   position: fixed;
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 }
 #navbar a {
-  color: beige; /* Change this to blue if you prefer */
+  color: darkslategray;
   padding: 14px 20px;
   text-decoration: none;
+  font-size: 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+
 }
 /* Change the color of links on hover */
 #navbar a:hover {
@@ -61,8 +66,11 @@ body {
 }
 
 #logo.big {
-  max-height: 40vh;
-  min-width: 25vw;
+  max-height: max-content;
+  min-width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Style the login button */
