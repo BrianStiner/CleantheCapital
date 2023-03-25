@@ -5,7 +5,7 @@ const scrollThreshold = 500;
 const logoElement = document.getElementById('logo');
 const videoBoxElement = document.getElementById('video-box');
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 1368) {
     logoElement.classList.remove('big');
 }
 

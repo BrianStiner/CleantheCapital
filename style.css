@@ -5,13 +5,10 @@
   margin: 0;
   padding: 0;
   transition: all 0.3s ease;
-}
-img {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 body {
@@ -137,11 +134,15 @@ inset 0 0 100px 200px whitesmoke;
   margin-left: auto;
   margin-right: 50px;
 }
+#hero img:first {
+  margin-left: -50px;
+}
 @media (max-width: 768px) {
   #hero {
     width: 100vw;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;
   }
   #hero img:first {
     margin-left: 0px;
@@ -245,6 +246,9 @@ inset 0 0 100px 200px whitesmoke;
 @media (max-width: 768px) {
   .box {
     grid-template-columns: 1fr;
+  }
+  .video-box {
+    margin: none;
   }
   .services {
     margin: 0px auto 25px auto;
