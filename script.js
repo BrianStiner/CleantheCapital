@@ -1,5 +1,5 @@
 // Set scroll threshold
-const scrollThreshold = 700;
+const scrollThreshold = 500;
 
 // Get a reference to #logo
 const logoElement = document.getElementById('logo');

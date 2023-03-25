@@ -46,8 +46,8 @@ body {
 /* Style the logo */
 #logo {
   position: fixed;
-  top: 5%;
-  left: 5%;
+  top: 1%;
+  left: 1%;
   z-index: 3;
   min-height: 10vh;
   min-width: 6vw;
@@ -56,8 +56,10 @@ body {
 #logo.big {
   max-height: 35vh;
   max-width: 35vw;
-  top: 32vh;
-  left: 32vw;
+  min-height: max-content;
+  min-width: max-content;
+  top: 20vh;
+  left: 20vw;
 }
 
 /* Style the login button */
@@ -115,8 +117,10 @@ body {
 }
 /* Style the words on the home page*/
 #hero {
-  height: 100%;
+  min-height: 1000px;
   width: 100%;
+  flex-direction: column;
+  flex: right;
 }
 #hero h2 {
   font-size: 50px;
@@ -163,7 +167,7 @@ body {
   text-transform: capitalize;
   z-index: 1;
 }
-.Wave {
+.button .Wave {
   position: absolute;
   background: url(images/water.svg);
   background-position: 50%;
