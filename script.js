@@ -20,6 +20,7 @@ window.addEventListener('scroll', () => {
         // If window.scrollY > scrollThreshold, remove .big class from #logo
         if (window.scrollY > scrollThreshold) {
             logoElement.classList.remove('big');
+            logoElement.classList.remove('set');
         }
     } else {
         // If window.scrollY < scrollThreshold, add .big class to #logo
