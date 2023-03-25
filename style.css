@@ -45,7 +45,8 @@ body {
 /* Style the logo */
 #logo {
   position: fixed;
-  top: 10px;
+  top: 5%;
+  left: 5%;
   z-index: 3;
   min-height: 10vh;
   min-width: 6vw;
@@ -54,8 +55,8 @@ body {
 #logo.big {
   min-height: 35vh;
   min-width: 35vw;
-  top: 10%;
-  left: 10%;
+  top: 32vh;
+  left: 32vw;
 }
 
 /* Style the login button */
@@ -122,7 +123,7 @@ body {
   justify-content: flex-end;
   width: 180px;
   height: 100px;
-  background-color: #3abffdfa;
+  background-color: #3abffdeb;
   overflow: hidden;
 }
 .button:hover .Wave {
@@ -188,21 +189,21 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 400px;
-  padding: 0 20px;
-  background-color: white;
+  margin-top: 40px;
+  padding: 5px 10px;
+  background-color: whitesmoke;
 }
 
 .services h3 {
   font-size: 36px;
-  color: #00f;
+  color: lightblue
   text-align: center;
   width: 100%;
 }
 
 .services p {
   font-size: 18px;
-  color: #000;
+  color: lightgray;
   text-align: center;
   width: 100%;
 }
@@ -221,10 +222,10 @@ body {
 
 .service-item h4 {
   font-size: 24px;
-  color: #00f;
+  color: lightblue
 }
 
 .service-item p {
   font-size: 16px;
-  color: #000;
+  color: lightgray
 }
