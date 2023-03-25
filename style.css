@@ -54,8 +54,8 @@ body {
 }
 
 #logo.big {
-  min-height: 35vh;
-  min-width: 35vw;
+  max-height: 35vh;
+  max-width: 35vw;
   top: 32vh;
   left: 32vw;
 }
@@ -113,7 +113,27 @@ body {
     width: 177.78vh;
   }
 }
-
+/* Style the words on the home page*/
+#hero {
+  height: 100%;
+  width: 100%;
+}
+#hero h2 {
+  font-size: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: darkslategray;
+  text-align: center;
+  margin-top: 10%;
+}
+#hero p {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+}
 /* Style the button used to book service */
 .button {
   border-radius: 20px;
@@ -136,15 +156,15 @@ body {
   font-size: 24px;
 }
 .button span {
-  font-weight: 550;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 30px;
+  font-size: 25px;
   text-transform: capitalize;
   z-index: 1;
 }
 .Wave {
-  position: relative;
+  position: absolute;
   background: url(images/water.svg);
   background-position: 50%;
   background-size: auto 100%;
