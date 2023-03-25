@@ -241,13 +241,13 @@ inset 0 0 100px 200px whitesmoke;
 }
 
 .service-item {
+  display: flex;
   flex-basis: calc(50% - 10px);
   flex-direction: row;
   margin-top: 10px;
   text-align: center;
 }
 .service-item span {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
