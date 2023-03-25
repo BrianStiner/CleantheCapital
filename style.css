@@ -47,10 +47,10 @@ body {
 }
 
 #logo.big {
-  min-height: 100vh;
-  min-width: 100vw;
-  top: 50%;
-  left: 50%;
+  min-height: 40vh;
+  min-width: 40vw;
+  top: 10%;
+  left: 10%;
   transform: translate(-50%, -50%);
 }
 
