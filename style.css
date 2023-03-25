@@ -220,12 +220,8 @@ inset 0 0 100px 200px whitesmoke;
 .services {
   border-radius: 6%;
   display: flex;
-  margin-top: -98px;
-  padding: 5px 10px;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin: -30px 0;
-  padding: auto;
+  margin: -60px 8px 25px;
 }
 
 .services h3 {
@@ -241,15 +237,10 @@ inset 0 0 100px 200px whitesmoke;
 }
 
 .service-item {
-  flex-basis: calc(33.33% - 40px);
-  margin-top: 20px;
+  flex-basis: calc(50% - 10px);
+  flex-direction: row;
+  margin-top: 10px;
   text-align: center;
-}
-
-.service-item img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
 }
 
 .service-item h4 {
