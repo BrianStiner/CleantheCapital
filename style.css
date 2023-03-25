@@ -36,7 +36,6 @@ body {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  padding-top: 0;
 }
 /* Change the color of links on hover */
 #navbar a:hover {
@@ -45,7 +44,7 @@ body {
 
 /* Style the logo */
 #logo {
-  min-width: 15vw;
+  width: 15vw;
   top: -1%;
   left: 1%;
   position: fixed;
@@ -56,9 +55,16 @@ inset 0 0 100px 200px whitesmoke;
 }
 
 #logo.big {
-  min-width: 50vw;
+  width: 50vw;
   top: 10vh;
   left: -2vw;
+}
+@media (min-width: 1434px) {
+  #logo.big {
+    width: 660px;
+  }
+}
+  
 }
 
 /* Style the login button */
@@ -88,13 +94,13 @@ inset 0 0 100px 200px whitesmoke;
 /* Style the video to be a responsive nice looking background */
 .video-box {
   margin-left: 5%;
-  height: 100vh;
+  height: 80vh;
+  width: auto;
   position: relative;
   overflow: hidden;
-  width: 40vw;
   margin-top: -40px;
   float: left;
-  border-radius: 50%;
+  border-radius: 100%;
   z-index: -1;
 }
 .video-box video {
