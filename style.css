@@ -221,11 +221,26 @@ inset 0 0 100px 200px whitesmoke;
 
 
 /* Style the services section for residential customers */
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 600px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
 .services {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr repeat(4, 2fr);
+  max-width: 600px;
   border-radius: 6%;
-  display: flex;
-  flex-direction: column;
-  margin: -60px auto 25px auto;
+  margin: -40px auto 25px auto;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 
+              0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .services h3 {
@@ -241,12 +256,13 @@ inset 0 0 100px 200px whitesmoke;
 }
 
 .service-item {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 10fr;
+  margin: 12px auto;
   text-align: center;
   align-items: center;
 }
+
 .service-item h4 {
   font-size: 24px;
 }
