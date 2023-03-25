@@ -233,7 +233,7 @@ inset 0 0 100px 200px whitesmoke;
 .services {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr repeat(4, 2fr);
+  grid-template-rows: 1fr repeat(auto-fit, 2fr);
   max-width: 600px;
   border-radius: 6%;
   margin: -40px auto 25px auto;
