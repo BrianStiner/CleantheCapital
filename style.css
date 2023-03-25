@@ -173,7 +173,7 @@ body {
   z-index: 1;
 }
 .button .Wave {
-  position: relative;
+  position: absolute;
   background: url(images/water.svg);
   background-position: 50%;
   background-size: auto 100%;
