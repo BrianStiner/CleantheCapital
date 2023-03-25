@@ -23,8 +23,10 @@ body {
               0px 6px 20px 0px rgba(0, 0, 0, 0.19),
               0px 8px 15px rgba(0, 0, 0, 0.2);
   top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-end;
+  width: 100vw;
   z-index: 2;
 }
 #navbar a {
@@ -37,6 +39,7 @@ body {
   display: block;
   text-align: center;
   padding: 14px 16px;
+  padding-top: 0;
 }
 /* Change the color of links on hover */
 #navbar a:hover {
