@@ -92,20 +92,18 @@ inset 0 0 100px 200px whitesmoke;
 
 /* Style the video to be a responsive nice looking background side */
 .video-box {
-  display: grid;
-  width: 100vw;
-  height: 100vw;
-  margin: -5% 1% 1%;
+  width: 65vh;
+  height: 65vh;
+  margin: -8% auto 2% -8%;
   overflow: hidden;
   border-radius: 100%;
   z-index: -1;
 }
 .video-box video {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
 }
 @media (min-aspect-ratio: 16/9) {
   .video-box video {
