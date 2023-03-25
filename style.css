@@ -243,7 +243,11 @@ inset 0 0 100px 200px whitesmoke;
   margin-top: 10px;
   text-align: center;
 }
-
+.service-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .service-item h4 {
   font-size: 24px;
 }
