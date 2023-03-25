@@ -120,9 +120,8 @@ body {
 }
 /* Style the words on the home page*/
 #hero {
-  min-height: 1000px;
+  min-height: 800px;
   width: 50%;
-  flex-direction: column;
   flex: right;
 }
 #hero h2 {
@@ -146,9 +145,7 @@ body {
   border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2), 
               0px 6px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: relative;
   width: 180px;
   height: 100px;
   background-color: #3abffdeb;
@@ -171,14 +168,14 @@ body {
   z-index: 1;
 }
 .button .Wave {
-  position: absolute;
+  position: relative;
   background: url(images/water.svg);
   background-position: 50%;
   background-size: auto 100%;
   background-repeat: repeat-x;
   transition-duration: 1s;
-  left: 200px;
-  top: 90px;
+  left: -25px;
+  top: 20px;
   height: 50px;
   width: 400px;
   animation: move 5s cubic-bezier(.36, .45, .63, .53) infinite; 
@@ -186,7 +183,7 @@ body {
 }
 .Wave:nth-of-type(2) {
   left: 0px;
-  top: 88px;
+  top: 0px;
   opacity: 100%;
   animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
   -webkit-animation: move 5s cubic-bezier(.36, .45, .63, .53) -0.125s infinite, swell 7s ease -0.125s infinite;
