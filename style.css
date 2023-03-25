@@ -4,55 +4,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 body {
   background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7eb7e 100%);
 }
-/* Add a black background color to the top navigation */
-.topnav {
+
+#navbar {
   position: sticky;
   background-color: black;
   overflow: hidden;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  position: sticky;
   top: 0;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-#navbar {
-  position: fixed;
   display: flex;
   justify-content: flex-end;
   z-index: 2;
 }
 #navbar a {
   color: darkslategray;
-  padding: 14px 20px;
   text-decoration: none;
   font-size: 17px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
 }
 /* Change the color of links on hover */
 #navbar a:hover {
   color: black;
-}
-/* Right-aligned section inside the top navigation */
-#navbar .right {
-  float: right;
-}
-#navbar .left {
-  float: left;
 }
 
 /* Style the logo */
