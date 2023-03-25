@@ -7,14 +7,20 @@
   transition: all 0.3s ease;
 }
 body {
-  background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7eb7e 100%);
+  background-image: url(images/Background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #navbar {
   position: sticky;
-  background-color: black;
+  background-color: whitesmoke;
   overflow: hidden;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+              0px 6px 20px 0px rgba(0, 0, 0, 0.19),
+              0px 8px 15px rgba(0, 0, 0, 0.2);
   top: 0;
   display: flex;
   justify-content: flex-end;
@@ -40,10 +46,10 @@ body {
 #logo {
   position: fixed;
   top: 0;
-  left: -20px;
-  z-index: 2;
-  max-height: 8vh;
-  min-width: 5vw;
+  left: -10px;
+  z-index: 3;
+  max-height: 10vh;
+  min-width: 6vw;
 }
 
 #logo.big {
