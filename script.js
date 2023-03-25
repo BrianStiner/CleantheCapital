@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
             } else if (window.innerWidth <= 1200) {
                 logoElement.classList.remove('set');
                 calcleft = (window.innerWidth - 1200) / 2;
-                videoBoxElement.style.left = calcleft + 'px';
+                videoBoxElement.style.margin_left = '-' + calcleft + 'px';
             }
         }
     }
