@@ -257,8 +257,11 @@ body {
   margin: -40px auto 25px auto;
   align-items: center;
   overflow: hidden;
-  background-color: #fff7ed54;
-  box-shadow: 131px 8px 15px rgba(0, 0, 0, 0.2), 59px 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff7ed1e;
+  box-shadow: inset 0 0 0 10px black, /* creates a solid black border */
+             50px 50px 0 0 #2569f9, /* creates a solid blue shadow */
+             100px 100px 0 0 #3249f4, /* creates a solid purple shadow */
+             150px 150px 0 0 #538bfd; /* creates a solid light blue shadow */
   backdrop-filter: blur(5px);
   text-align: left;
 }
