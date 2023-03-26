@@ -36,8 +36,8 @@ window.addEventListener('load', function() {
     const fadeInElements = document.querySelectorAll('.fade-in');
 
     // Use GSAP to recursively initialize the elements to be invisible
-    fadeInElements.querySelectorAll('*').forEach(function(element) {
-        gsap.set(element, { opacity: 0, y: -50 });
+    fadeInElements.forEach(function(element) {
+        gsap.set(element.querySelectorAll('*'), { opacity: 0, y: -50 });
     });
 
     // Create an intersection observer
