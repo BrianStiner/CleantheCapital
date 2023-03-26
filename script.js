@@ -16,6 +16,7 @@ window.addEventListener('load', function() {
     console.log(logoElement.classList.contains('big'));
     // Listen for scroll events on window, if far enough down shrink logo, and reverse.
     window.addEventListener('scroll', () => {
+        if (window.innerWidth < 1268) { return; } // Don't do anything if the window is too small.
         if (logoElement.classList.contains('big')) {
             if (window.scrollY > scrollThreshold) {
                 logoElement.classList.remove('big');
