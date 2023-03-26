@@ -36,7 +36,7 @@ window.addEventListener('load', function() {
     const fadeInElements = document.querySelectorAll('.fade-in');
 
     // Use GSAP to recursively initialize the elements to be invisible
-    forEach(fadeInElements.querySelectorAll('*'), function(element) {
+    fadeInElements.querySelectorAll('*').forEach(function(element) {
         gsap.set(element, { opacity: 0, y: -50 });
     });
 
