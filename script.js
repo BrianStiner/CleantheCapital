@@ -32,4 +32,31 @@ window.addEventListener('load', function() {
         logoElement.classList.remove('big');
     }
 
+
+
+// Get all the fade-in elements
+const fadeInElements = document.querySelectorAll('.fade-in');
+
+// Create an intersection observer
+const observer = new IntersectionObserver(function(entries) {
+  // Loop through the entries
+  entries.forEach(function(entry) {
+    // If the element is intersecting
+    if (entry.isIntersecting) {
+      // Use GSAP to animate the element
+      gsap.from(entry.target, { y: 50, opacity: 0, duration: 1 });
+
+      // Stop observing the element
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Observe all the fade-in elements
+fadeInElements.forEach(function(element) {
+  observer.observe(element);
+});
+
+
+
 });
