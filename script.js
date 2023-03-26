@@ -6,7 +6,9 @@ const logoElement = document.getElementById('logo');
 const videoBoxElement = document.getElementById('video-box');
 
 calcleft = (window.innerWidth - 1268) / 2;
-videoBoxElement.style.marginLeft = calcleft + 'px';
+if(videoBoxElement){
+    videoBoxElement.style.marginLeft = calcleft + 'px';
+}
 
 if (window.innerWidth < 1268) {
     logoElement.classList.remove('big');
