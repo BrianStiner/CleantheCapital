@@ -6,13 +6,12 @@ const logoElement = document.getElementById('logo');
 // Get the root element
 var r = document.querySelector(':root');
 
+// Used to modify elements to fit nicely on the page.
 calcleft = (window.innerWidth - 1268) / 2 + 20;
 r.style.setProperty('--left', calcleft + 'px');
 
-if (window.innerWidth < 1268) {
-    logoElement.classList.remove('big');
-}
 
+console.log(logoElement.classList.contains('big'));
 // Listen for scroll events on window, if far enough down shrink logo, and reverse.
 window.addEventListener('scroll', () => {
     if (logoElement.classList.contains('big')) {
@@ -25,4 +24,8 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+if (window.innerWidth < 1268) {
+    logoElement.classList.remove('big');
+}
 
