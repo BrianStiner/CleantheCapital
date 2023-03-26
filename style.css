@@ -15,6 +15,7 @@
 }
 
 body {
+  overflow: hidden;
   background-image: url(images/Background.svg);
   background-size: cover;
   background-repeat: no-repeat;
