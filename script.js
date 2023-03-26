@@ -44,7 +44,7 @@ const observer = new IntersectionObserver(function(entries) {
     // If the element is intersecting
     if (entry.isIntersecting) {
       // Use GSAP to animate the element
-      gsap.from(entry.target, { y: 50, opacity: 0, duration: 1 });
+      gsap.from(entry.target, { y: 100, opacity: 0, duration: 1.6, ease: "power1.out" });
 
       // Stop observing the element
       observer.unobserve(entry.target);
