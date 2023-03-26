@@ -1,5 +1,5 @@
 // Set scroll threshold
-const scrollThreshold = 500;
+const scrollThreshold = 300;
 
 // Get a reference to #logo
 const logoElement = document.getElementById('logo');
@@ -10,7 +10,6 @@ if (window.innerWidth < 1268) {
     calcleft = (window.innerWidth - 1268) / 2;
     videoBoxElement.style.marginLeft = calcleft + 'px';
 } else if (window.innerWidth > 1268) {
-    logoElement.classList.add('big');
     calcleft = (window.innerWidth - 1268) / 2;
     videoBoxElement.style.marginLeft = calcleft + 'px';
 }
