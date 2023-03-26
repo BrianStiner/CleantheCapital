@@ -250,13 +250,13 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr repeat(auto-fit, 2fr);
   max-width: 600px;
-  border-radius: 6%;
   margin: -40px auto 25px auto;
   align-items: center;
   overflow: hidden;
-  background-color: #7ed6ff17;
-  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.2), 
-              3px 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff7ed54;
+  box-shadow: 131px 8px 15px rgba(0, 0, 0, 0.2), 59px 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  text-align: left;
 }
 
 .services h3 {
