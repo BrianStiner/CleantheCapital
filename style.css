@@ -122,14 +122,15 @@ body {
   width: 55vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 3fr 1fr;
   min-height: 600px;
   padding: 0px 10px 10px;
   margin-left: auto;
   margin-right: 50px;
 }
 #hero img {
-  max-width: 90%;
+  rotate: 20deg;
+  max-width: 99%;
 }
 @media (max-width: 768px) {
   #hero {
