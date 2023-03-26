@@ -3,9 +3,11 @@ const scrollThreshold = 400;
 
 // Get a reference to #logo
 const logoElement = document.getElementById('logo');
+// Get the root element
+var r = document.querySelector(':root');
 
 calcleft = (window.innerWidth - 1268) / 2 + 20;
-document.getElementById('video-box').style.marginLeft = calcleft + 'px';
+r.style.setProperty('--left', calcleft + 'px');
 
 if (window.innerWidth < 1268) {
     logoElement.classList.remove('big');

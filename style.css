@@ -1,3 +1,6 @@
+:root{
+  --left: 0px;
+}
 *,
 *:before,
 *:after {
@@ -90,10 +93,10 @@ body {
 
 /* Style the video to be a responsive nice looking background side */
 .video-box {
-  width: 65vh;
-  height: 65vh;
-  margin-left: 0px;
-  margin-top: -8%;
+  width: 70vh;
+  height: 70vh;
+  margin-left: var(--left);
+  margin-top: -6%;
   margin-bottom: 2%;
   margin-right: auto;
   overflow: hidden;
