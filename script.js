@@ -39,11 +39,11 @@ window.addEventListener('load', function() {
     const observer = new IntersectionObserver(function(entries) {
     // Loop through the entries
     entries.forEach(function(entry) {
-        // If the element is intersecting
+
         if (entry.isIntersecting) {
         // Use GSAP to animate the element
-        gsap.from(container.querySelectorAll("*"), {
-            opacity: 0, y: 50,
+        gsap.from(entry.target.querySelectorAll('*'), {
+            opacity: 0, y: -50,
             duration: 1.6,
             ease: "power1.out",
             stagger: 0.2, delay: 0.2
