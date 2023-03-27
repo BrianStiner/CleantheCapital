@@ -47,9 +47,9 @@ window.addEventListener('load', function() {
 
         if (entry.isIntersecting) {
         // Use GSAP to animate the element
-        gsap.from(entry.target.querySelectorAll('*'), {
-            opacity: 0, y: -50,
-            duration: 1.6,
+        gsap.to(entry.target.querySelectorAll('*'), {
+            opacity: 100, y: 0,
+            duration: 1.3,
             ease: "power1.out",
             stagger: 0.2, delay: 0.2
         });
